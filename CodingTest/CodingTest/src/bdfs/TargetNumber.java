@@ -3,12 +3,12 @@ package bdfs;
 public class TargetNumber {
 
 	// case 1
-//	static int[] numbers = { 1, 1, 1, 1, 1 };
-//	static int target = 3;
+	static int[] numbers = { 1, 1, 1, 1, 1 };
+	static int target = 3;
 
 	// case 2
-	static int[] numbers = { 4, 1, 2, 1 };
-	static int target = 2;
+//	static int[] numbers = { 4, 1, 2, 1 };
+//	static int target = 2;
 
 	public static void main(String[] args) {
 		TargetNumber targetNumber = new TargetNumber();
