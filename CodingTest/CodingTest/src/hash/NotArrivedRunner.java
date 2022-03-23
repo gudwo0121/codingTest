@@ -6,16 +6,16 @@ import java.util.HashMap;
 public class NotArrivedRunner {
 
 	// case 1
-//	static String[] participant = { "leo", "kiki", "eden" };
-//	static String[] completion = { "eden", "kiki" };
+	static String[] participant = { "leo", "kiki", "eden" };
+	static String[] completion = { "eden", "kiki" };
 
 	// case 2
 //	static String[] participant = { "marina", "josipa", "nikola", "vinko", "filipa" };
 //	static String[] completion = { "josipa", "filipa", "marina", "nikola" };
 
 	// case 3
-	static String[] participant = { "mislav", "stanko", "mislav", "ana" };
-	static String[] completion = { "stanko", "ana", "mislav" };
+//	static String[] participant = { "mislav", "stanko", "mislav", "ana" };
+//	static String[] completion = { "stanko", "ana", "mislav" };
 
 	public static void main(String[] args) {
 		NotArrivedRunner notArrivedRunner = new NotArrivedRunner();
