@@ -25,3 +25,9 @@
 * [전화번호 목록](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/stringPrank/PhoneNumList.java)
 
 ***
+
+### FullSearch
+
+* [모의고사](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/fullSearch/MockExam.java)
+
+***
