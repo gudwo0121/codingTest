@@ -5,6 +5,7 @@
 ### Hash
 
 * [완주하지 못한 선수](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/hash/NotArrivedRunner.java)
+* [위장](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/hash/Camouflage.java)
 
 ***
 
@@ -20,13 +21,13 @@
 
 ***
 
-### StringPrank
+### String  Prank
 
 * [전화번호 목록](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/stringPrank/PhoneNumList.java)
 
 ***
 
-### FullSearch
+### Full Search
 
 * [모의고사](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/fullSearch/MockExam.java)
 
