@@ -23,7 +23,6 @@ public class MaxNumber {
 	// solution 1
 	// Comparator-compare 활용
 	// StringBuilder 활용
-	// solution 2
 	public String solution1(int[] numbers) {
 		String answer = "";
 		String[] strArr = new String[numbers.length];
