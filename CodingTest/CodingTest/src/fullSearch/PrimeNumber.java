@@ -1,5 +1,7 @@
 package fullSearch;
 
+import java.util.Arrays;
+
 public class PrimeNumber {
 
 	// case 1
@@ -17,6 +19,15 @@ public class PrimeNumber {
 	// solution 1
 	public int solution1(String numbers) {
 		int answer = 0;
+		int[] arr = new int[numbers.length()];
+
+		int i = 0;
+		for (String num : numbers.split(""))
+			arr[i++] = Integer.parseInt(num);
+		System.out.println(Arrays.toString(arr));
+		
+		
+		
 		
 		
 

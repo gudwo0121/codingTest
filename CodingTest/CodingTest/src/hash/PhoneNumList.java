@@ -1,4 +1,4 @@
-package stringPrank;
+package hash;
 
 import java.util.Arrays;
 
