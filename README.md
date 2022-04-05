@@ -31,6 +31,7 @@
 ### Full Search
 
 * [모의고사](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/fullSearch/MockExam.java)
+* [소수찾기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/fullSearch/PrimeNumber.java)
 
 ***
 
