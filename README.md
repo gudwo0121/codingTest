@@ -13,7 +13,7 @@
 ### Greedy
 
 * [체육복](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/GymSuit.java)
-* [조이스틱](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/JoyStick.java) - need more info
+* [조이스틱](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/JoyStick.java)
 
 ***
 
@@ -26,7 +26,7 @@
 ### Full Search
 
 * [모의고사](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/fullSearch/MockExam.java)
-* [소수찾기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/fullSearch/PrimeNumber.java) - need more info
+* [소수찾기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/fullSearch/PrimeNumber.java)
 
 ***
 
