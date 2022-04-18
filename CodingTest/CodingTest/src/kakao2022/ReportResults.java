@@ -1,9 +1,8 @@
 package kakao2022;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
 
 public class ReportResults {
 
@@ -19,94 +18,58 @@ public class ReportResults {
 
 	public static void main(String[] args) {
 		ReportResults reportResults = new ReportResults();
-		int[] answer = reportResults.solution2(id_list, report, k);
+		int[] answer = reportResults.solution1(id_list, report, k);
 		System.out.println(Arrays.toString(answer));
 	}
 
 	// solution 1
-	// 해시셋으로 중복을 제거하라 + 이중 반복문말고 하나씩 나눠서 정리하라
 	public int[] solution1(String[] id_list, String[] report, int k) {
 		int[] answer = new int[id_list.length];
-		HashMap<String, Integer> reportMap = new HashMap<>();
-		HashMap<String, Integer> mailMap = new HashMap<>();
+		// 이름 : id_list 인덱스 순서
+		HashMap<String, Integer> idIndex = new HashMap<>();
+		// 피신고자 : 신고자들
+		HashMap<String, ArrayList<String>> reportMap = new HashMap<>();
 
-		Arrays.sort(report);
-
-		String compare = "";
-		for (String id : report) {
-			if (compare.equals(id)) {
-				break;
-			}
-			String reportedId = id.substring(id.lastIndexOf(" ") + 1);
-			reportMap.put(reportedId, reportMap.getOrDefault(reportedId, 0) + 1);
-			compare = id;
+		for (int i = 0; i < id_list.length; i++) {
+			// id_list의 이름 순서를 인덱스로 기억 = 순서에 맞춰 출력하기 위함
+			idIndex.put(id_list[i], i);
+			// new 선언으로 key & list of Value 생성
+			reportMap.put(id_list[i], new ArrayList<>());
 		}
 
+		// 신고 정보에서
+		for (String reported : report) {
+			// 공백을 기준으로 split
+			// temp[0] = 신고자
+			// temp[1] = 피신고자
+			String[] temp = reported.split(" ");
+
+			// 중복 신고가 아니라면
+			if (!reportMap.get(temp[1]).contains(temp[0])) {
+				// reportedMap value 값에 신고자 누적 추가
+				reportMap.get(temp[1]).add(temp[0]);
+			}
+		}
+
+		// 피신고자 반복
 		for (String id : reportMap.keySet()) {
-			if (reportMap.get(id) >= k) {
-				for (String user : report) {
-					String reportId = user.substring(0, user.indexOf(" "));
-					String reportedId = user.substring(user.lastIndexOf(" ") + 1);
+			// size = 신고당한 횟수
+			// 피신고자가 k번 이상 신고당했다면
+			if (k <= reportMap.get(id).size()) {
+				// 신고자들 반복
+				for (String reporter : reportMap.get(id)) {
 
-					if (reportedId.equals(id)) {
-						mailMap.put(reportId, mailMap.getOrDefault(reportId, 0) + 1);
-					}
-				}
-			}
-		}
+					// idIndex = { muzi=0, neo=3, frodo=1, apeach=2 }
+					// frodo -> muzi -> muzi -> apeach
+					// answer[1]++ -> answer[0]++ -> answer[0]++ -> answer[2]++
+					// = [2, 1, 1, 0]
 
-		int i = 0;
-		for (String id : id_list) {
-			if (mailMap.get(id) == null) {
-				answer[i++] = 0;
-			} else {
-				answer[i++] = mailMap.get(id);
-			}
-		}
-
-		System.out.println(reportMap);
-		System.out.println(mailMap);
-
-		return answer;
-	}
-
-	// solution 2
-	public int[] solution2(String[] id_list, String[] report, int k) {
-		int[] answer = new int[id_list.length];
-		HashSet<String> set = new HashSet<String>(Arrays.asList(report));
-		Iterator itr = set.iterator();
-		HashMap<String, String> map = new HashMap<String, String>();
-
-		while (itr.hasNext()) {
-			String temp = (String) itr.next();
-			String[] s = temp.split(" ");
-			if (map.containsKey(s[1])) {
-				String d = map.get(s[1]);
-				map.put(s[1], d + " " + s[0]);
-			} else {
-				map.put(s[1], s[0]);
-			}
-		}
-
-		Iterator entries = map.entrySet().iterator();
-		while (entries.hasNext()) {
-			HashMap.Entry entry = (HashMap.Entry) entries.next();
-			String key = (String) entry.getKey();
-			String value = (String) entry.getValue();
-			System.out.println(key + " " + value);
-			String[] white = value.split(" ");
-
-			if (white.length >= k) {
-
-				for (int i = 0; i < white.length; i++) {
-					for (int j = 0; j < id_list.length; j++) {
-						if (white[i].equals(id_list[j])) {
-							answer[j] += 1;
-						}
-					}
+					// 담아둔 idIndex를 기준으로 메일 수신 횟수 1씩 누적 증가
+					answer[idIndex.get(reporter)]++;
 				}
 			}
 		}
 		return answer;
 	}
+
 }

@@ -40,7 +40,7 @@
 
 ### 2022 kakao blind recruitment
 
-* [신고 결과 받기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/kakao2022/ReportResults.java) - notSolved
+* [신고 결과 받기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/kakao2022/ReportResults.java)
 
 ***
 
