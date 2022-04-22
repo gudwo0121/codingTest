@@ -14,7 +14,7 @@
 
 * [체육복](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/GymSuit.java)
 * [조이스틱](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/JoyStick.java)
-* [큰 수 만들기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/MakeBigNum.java) not solved
+* [큰 수 만들기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/MakeBigNum.java)
 
 ***
 
