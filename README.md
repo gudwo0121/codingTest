@@ -39,10 +39,14 @@
 
 ***
 
+### Stack & Queue
+
+* [기능개발](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/stackAndQueue/FuncDev.java)
+
+***
+
 ### 2022 kakao blind recruitment
 
 * [신고 결과 받기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/kakao2022/ReportResults.java)
 
 ***
-
-1 more...
