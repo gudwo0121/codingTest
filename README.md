@@ -45,6 +45,12 @@
 
 ***
 
+### Dynamic Programming
+
+* [N으로 표현](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/dynamic/NExpression.java)
+
+***
+
 ### 2022 kakao blind recruitment
 
 * [신고 결과 받기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/kakao2022/ReportResults.java)
