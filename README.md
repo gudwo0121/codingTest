@@ -15,6 +15,7 @@
 * [체육복](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/GymSuit.java)
 * [조이스틱](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/JoyStick.java)
 * [큰 수 만들기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/MakeBigNum.java)
+* [구명보트](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/LifeBoat.java)
 
 ***
 
@@ -54,5 +55,11 @@
 ### 2022 kakao blind recruitment
 
 * [신고 결과 받기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/kakao2022/ReportResults.java)
+
+***
+
+### Perm & Comb
+
+* [순열과 조합](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/permAndComb/PermAndComb.java)
 
 ***
