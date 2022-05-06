@@ -47,6 +47,12 @@
 
 ***
 
+### Heap
+
+* [더 맵게](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/heap/Hotter.java)
+
+***
+
 ### Dynamic Programming
 
 * [N으로 표현](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/dynamic/NExpression.java)
