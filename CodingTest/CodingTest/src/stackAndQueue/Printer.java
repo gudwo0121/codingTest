@@ -1,5 +1,7 @@
 package stackAndQueue;
 
+import java.util.Stack;
+
 public class Printer {
 
 	// case 1
@@ -19,6 +21,12 @@ public class Printer {
 	// solution 1
 	public int solution1(int[] priorities, int location) {
 		int answer = 0;
+		Stack<Integer> stack = new Stack<>();
+
+		for (int p : priorities) {
+			stack.add(p);
+		}
+		System.out.println(stack);
 
 		return answer;
 	}
