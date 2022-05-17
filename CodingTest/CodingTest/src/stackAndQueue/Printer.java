@@ -1,6 +1,9 @@
 package stackAndQueue;
 
-import java.util.Stack;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 public class Printer {
 
@@ -19,15 +22,54 @@ public class Printer {
 	}
 
 	// solution 1
+	// 값, 인덱스를 기억하는 큐를 각각 선언
+	// 삽입, 삭제를 통해 최종적으로 출력되는 인덱스 순서 result에 담기
 	public int solution1(int[] priorities, int location) {
-		int answer = 0;
-		Stack<Integer> stack = new Stack<>();
+		// 우선순위 기록
+		Queue<Integer> priority = new LinkedList<>();
+		// 인덱스 기록
+		Queue<Integer> idx = new LinkedList<>();
+		// POP 인덱스 기록
+		List<Integer> result = new ArrayList<>();
 
-		for (int p : priorities) {
-			stack.add(p);
+		// 값과 인덱스(0부터 시작) 담기
+		int i = 0;
+		for (int pr : priorities) {
+			priority.add(pr);
+			idx.add(i++);
 		}
-		System.out.println(stack);
 
-		return answer;
+		// 큐가 비어있으면 중지
+		while (!priority.isEmpty()) {
+
+			// 첫번째 값과 인덱스 뽑아 담기
+			int target = priority.poll();
+			int targetIdx = idx.poll();
+
+			// POP 여부를 판단하는 변수
+			boolean isPop = true;
+			for (int num : priority) {
+				// 값의 우선순위가 MAX : POP
+				// 그 외는 SHIFT
+				if (num > target)
+					isPop = false;
+			}
+
+			// SHIFT : 값과 인덱스 맨 뒤로 재배치
+			if (!isPop) {
+				priority.add(target);
+				idx.add(targetIdx);
+			}
+			// POP : 값의 인덱스 기록
+			else {
+				result.add(targetIdx);
+			}
+		}
+
+		// ex) 119111, 0
+		// 출력되는 인덱스 순서는 (234501)
+		// 여기서 location(=0)은 [4], 그러나 실제 위치는 5번째
+		// 따라서 1을 더하고 리턴
+		return (result.indexOf(location) + 1);
 	}
 }
