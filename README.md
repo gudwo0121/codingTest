@@ -45,6 +45,7 @@
 
 * [기능개발](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/stackAndQueue/FuncDev.java)
 * [프린터](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/stackAndQueue/Printer.java)
+* [다리를 지나는 트럭](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/stackAndQueue/TruckCross.java)
 
 ***
 
