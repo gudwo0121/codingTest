@@ -1,4 +1,4 @@
-package kakao2022;
+package kakao;
 
 import java.util.ArrayList;
 import java.util.Arrays;
