@@ -54,6 +54,7 @@
 ### Heap
 
 * [더 맵게](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/heap/Hotter.java)
+* [디스크 컨트롤러](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/heap/DiskController.java)
 
 ***
 
