@@ -61,7 +61,7 @@
 ### Dynamic Programming
 
 * [N으로 표현](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/dynamic/NExpression.java)
-* [정수 삼각형](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/dynamic/IntTriangle.java) - TODO
+* [정수 삼각형](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/dynamic/IntTriangle.java)
 
 ***
 
