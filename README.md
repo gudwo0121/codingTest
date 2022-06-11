@@ -34,6 +34,12 @@
 
 ***
 
+### Binary Search
+
+* [입국심사](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/binarySearch/Immigration.java)
+
+***
+
 ### Sort
 
 * [K번째수](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/sort/KNumber.java)
@@ -77,4 +83,3 @@
 
 ***
 
-todo
