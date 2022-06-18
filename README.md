@@ -17,7 +17,7 @@
 * [조이스틱](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/JoyStick.java)
 * [큰 수 만들기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/MakeBigNum.java)
 * [구명보트](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/LifeBoat.java)
-* [섬 연결하기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/ConnectingLands.java)
+* [섬 연결하기](https://github.com/gudwo0121/codingTest/blob/master/CodingTest/CodingTest/src/greedy/ConnectingLands.java) - todo
 
 ***
 
